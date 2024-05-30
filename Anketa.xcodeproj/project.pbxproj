@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		020A76C62C08E46A002782E3 /* AnketaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A76C52C08E46A002782E3 /* AnketaApp.swift */; };
-		020A76C82C08E46A002782E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A76C72C08E46A002782E3 /* ContentView.swift */; };
+		020A76C82C08E46A002782E3 /* AnketaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020A76C72C08E46A002782E3 /* AnketaView.swift */; };
 		020A76CA2C08E46C002782E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 020A76C92C08E46C002782E3 /* Assets.xcassets */; };
 		020A76CD2C08E46C002782E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 020A76CC2C08E46C002782E3 /* Preview Assets.xcassets */; };
+		024D9CC72C090830003DC578 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024D9CC62C090830003DC578 /* View+Extensions.swift */; };
+		024D9CC92C09133A003DC578 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024D9CC82C09133A003DC578 /* TextFieldView.swift */; };
+		024D9CCB2C09258E003DC578 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024D9CCA2C09258E003DC578 /* UIApplication+Extension.swift */; };
+		024D9CCD2C092A6C003DC578 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024D9CCC2C092A6C003DC578 /* UIImage+Extensions.swift */; };
+		024D9CCF2C09369C003DC578 /* MailComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024D9CCE2C09369C003DC578 /* MailComposeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		020A76C22C08E46A002782E3 /* Anketa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anketa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		020A76C52C08E46A002782E3 /* AnketaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnketaApp.swift; sourceTree = "<group>"; };
-		020A76C72C08E46A002782E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		020A76C72C08E46A002782E3 /* AnketaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnketaView.swift; sourceTree = "<group>"; };
 		020A76C92C08E46C002782E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		020A76CC2C08E46C002782E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		024D9CC62C090830003DC578 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		024D9CC82C09133A003DC578 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		024D9CCA2C09258E003DC578 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		024D9CCC2C092A6C003DC578 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		024D9CCE2C09369C003DC578 /* MailComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailComposeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,10 @@
 		020A76C42C08E46A002782E3 /* Anketa */ = {
 			isa = PBXGroup;
 			children = (
+				024D9CC52C090826003DC578 /* Extensions */,
+				024D9CC22C0905BF003DC578 /* Components */,
+				020A76C72C08E46A002782E3 /* AnketaView.swift */,
 				020A76C52C08E46A002782E3 /* AnketaApp.swift */,
-				020A76C72C08E46A002782E3 /* ContentView.swift */,
 				020A76C92C08E46C002782E3 /* Assets.xcassets */,
 				020A76CB2C08E46C002782E3 /* Preview Content */,
 			);
@@ -65,6 +77,25 @@
 				020A76CC2C08E46C002782E3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		024D9CC22C0905BF003DC578 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				024D9CC82C09133A003DC578 /* TextFieldView.swift */,
+				024D9CCE2C09369C003DC578 /* MailComposeView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		024D9CC52C090826003DC578 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				024D9CC62C090830003DC578 /* View+Extensions.swift */,
+				024D9CCA2C09258E003DC578 /* UIApplication+Extension.swift */,
+				024D9CCC2C092A6C003DC578 /* UIImage+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				020A76C82C08E46A002782E3 /* ContentView.swift in Sources */,
+				020A76C82C08E46A002782E3 /* AnketaView.swift in Sources */,
+				024D9CC92C09133A003DC578 /* TextFieldView.swift in Sources */,
 				020A76C62C08E46A002782E3 /* AnketaApp.swift in Sources */,
+				024D9CCD2C092A6C003DC578 /* UIImage+Extensions.swift in Sources */,
+				024D9CCF2C09369C003DC578 /* MailComposeView.swift in Sources */,
+				024D9CCB2C09258E003DC578 /* UIApplication+Extension.swift in Sources */,
+				024D9CC72C090830003DC578 /* View+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
